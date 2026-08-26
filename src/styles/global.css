@@ -461,8 +461,7 @@ input[type="email"] { flex: 1; min-width: 200px; }
 
 .sermon-title { font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; }
 .sermon-meta { color: var(--text-low); font-size: 0.85rem; margin-bottom: 10px; }
-.sermon-desc { color: var(--text-mid); font-size: 0.9rem; }
-
+.sermon-desc { color: var(--text-hi); font-size: 1.05rem; line-height: 1.7; }
 .featured-badge {
   display: inline-block;
   background: var(--purple);
