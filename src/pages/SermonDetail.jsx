@@ -42,10 +42,12 @@ export default function SermonDetail() {
       <h1 style={{ fontSize: '2rem', fontWeight: 800, margin: '16px 0 6px' }}>
         {sermon.title}
       </h1>
-      <div className="sermon-meta" style={{ marginBottom: 20 }}>
-        {sermon.speaker || 'The Pulpit'}
-        {sermon.scripture_ref ? ` · ${sermon.scripture_ref}` : ''}
-      </div>
+      <div className="sermon-meta" style={{ marginBottom: 20 }}>{sermon.speaker || 'The Pulpit'}</div>
+      {sermon.scripture_ref && (
+        <blockquote className="scripture-quote">
+          {sermon.scripture_ref}
+        </blockquote>
+      )}
 
       {sermon.video_url && (
         <div style={{ marginBottom: 20 }}>
