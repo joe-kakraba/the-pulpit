@@ -11,10 +11,10 @@ export default function SermonCard({ sermon }) {
       <div className="sermon-body">
         {sermon.featured && <span className="featured-badge">Featured</span>}
         <div className="sermon-title">{sermon.title}</div>
-        <div className="sermon-meta">
-          {sermon.speaker || 'The Pulpit'}
-          {sermon.scripture_ref ? ` · ${sermon.scripture_ref}` : ''}
-        </div>
+        <div className="sermon-meta">{sermon.speaker || 'The Pulpit'}</div>
+        {sermon.scripture_ref && (
+          <div className="sermon-scripture">{sermon.scripture_ref}</div>
+        )}
         {sermon.description && (
         <p style={{ color: 'var(--text-hi)', fontSize: '1.05rem', lineHeight: 1.7, textAlign: 'justify', whiteSpace: 'pre-line' }}>
           {sermon.description}
