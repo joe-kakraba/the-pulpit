@@ -15,7 +15,11 @@ export default function SermonCard({ sermon }) {
           {sermon.speaker || 'The Pulpit'}
           {sermon.scripture_ref ? ` · ${sermon.scripture_ref}` : ''}
         </div>
-        {sermon.description && <div className="sermon-desc">{sermon.description}</div>}
+        {sermon.description && (
+        <p style={{ color: 'var(--text-hi)', fontSize: '1.05rem', lineHeight: 1.7, textAlign: 'justify', whiteSpace: 'pre-line' }}>
+          {sermon.description}
+        </p>
+      )}      
       </div>
     </Link>
   )
