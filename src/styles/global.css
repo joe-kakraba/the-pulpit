@@ -188,7 +188,17 @@ a { color: inherit; text-decoration: none; }
 .sermon-title { font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; }
 .sermon-meta { color: var(--text-low); font-size: 0.85rem; margin-bottom: 10px; }
 .sermon-desc { color: var(--text-mid); font-size: 1.05rem; line-height: 1.7; }
-
+.scripture-quote {
+  margin: 0 0 28px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--gold);
+  background: rgba(255, 179, 71, 0.08);
+  color: var(--gold);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 0 10px 10px 0;
+}
 .featured-badge {
   display: inline-block;
   background: var(--accent);
