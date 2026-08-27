@@ -48,6 +48,8 @@ export default function SermonDetail() {
     {sermon.scripture_ref}
   </blockquote>
 )}
+  </blockquote>
+)}
 )}
         </blockquote>
       )}
