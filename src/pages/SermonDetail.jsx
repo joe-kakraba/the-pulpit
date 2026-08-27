@@ -43,9 +43,11 @@ export default function SermonDetail() {
         {sermon.title}
       </h1>
       <div className="sermon-meta" style={{ marginBottom: 20 }}>{sermon.speaker || 'The Pulpit'}</div>
-      {sermon.scripture_ref && (
-        <blockquote className="scripture-quote">
-          {sermon.scripture_ref}
+{sermon.scripture_ref && (
+  <blockquote className="scripture-quote">
+    {sermon.scripture_ref}
+  </blockquote>
+)}
         </blockquote>
       )}
 
