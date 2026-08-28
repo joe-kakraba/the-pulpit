@@ -63,7 +63,6 @@ export default function SermonDetail() {
           {sermon.description}
         </p>
       )}
-      )}
       </div>
     </section>
   )
