@@ -48,12 +48,6 @@ export default function SermonDetail() {
     {sermon.scripture_ref}
   </blockquote>
 )}
-  </blockquote>
-)}
-)}
-        </blockquote>
-      )}
-
       {sermon.video_url && (
         <div style={{ marginBottom: 20 }}>
           <video controls style={{ width: '100%', borderRadius: 14 }} src={sermon.video_url} />
